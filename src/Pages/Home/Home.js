@@ -23,7 +23,9 @@ const Home = () => {
                 <span className="h3">Loading</span>
             </div>
             <div className="d-flex align-items-start">
-                <section className="position-absolute h-100 w-100" style={{left:'0',backgroundImage:`url(${Wpp})`,backgroundSize:'cover',backgroundPosition:'center'}}/>
+                <section className="position-absolute h-100 w-100" style={{left:'0',backgroundImage:`url(${Wpp})`,backgroundSize:'cover',backgroundPosition:'center'}}>
+                    <p className="home-judul">Lomba Terbaru</p>
+                </section>
             </div>
         </>
     )
