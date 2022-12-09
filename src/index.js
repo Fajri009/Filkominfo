@@ -10,6 +10,7 @@ import Beasiswa from './Pages/Beasiswa/Beasiswa.js';
 import Seminar from './Pages/Seminar/Seminar.js';
 import Oprec from './Pages/Oprec/Oprec.js';
 import Karya from './Pages/Karya/Karya.js';
+import Footer from './Components/Footer/Footer.js'
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -27,7 +28,8 @@ root.render(
           <Route path='/oprec' exact element={<Oprec />} />
           <Route path='/karya' exact element={<Karya />} />
         </Routes>
-      </div>
+        <Footer />
+      </div>  
     </Router>
   </React.StrictMode>
 );

@@ -3,13 +3,13 @@
 }
 
 .nav-links {
-    width: 60%;
+    width: 55%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     min-height: 65px;
-    font-size: 20px;
+    font-size: 21px;
 }
 
 .nav-click {
@@ -24,8 +24,8 @@
 }
 
 .nav-home {
-    width: 70px;
-    height: 40px;
+    width: 100px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;

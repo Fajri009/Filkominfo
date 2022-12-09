@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Nav = () => {
     return (
-        <div className='w-100' style={{height: '70px', backgroundColor: '#FFEBAD', left: '0', top: '0'}}>
+        <div className='w-100 align-items-start' style={{height: '70px', backgroundColor: '#FFEBAD', left: '0', top: '0'}}>
             <div className='row w-100'>
                 <div className='col-11'>
                     <ul className='nav-links'>
