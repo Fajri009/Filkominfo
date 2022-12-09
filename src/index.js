@@ -6,6 +6,7 @@ import App from './App';
 import Nav from './Components/Nav/Nav.js'
 import Home from './Pages/Home/Home.js';
 import Lomba from './Pages/Lomba/Lomba.js'
+import Desc_lomba from './Pages/Deskripsi/Lomba/Lomba.js'
 import Beasiswa from './Pages/Beasiswa/Beasiswa.js';
 import Seminar from './Pages/Seminar/Seminar.js';
 import Oprec from './Pages/Oprec/Oprec.js';
@@ -27,6 +28,7 @@ root.render(
           <Route path='/seminar' exact element={<Seminar />} />
           <Route path='/oprec' exact element={<Oprec />} />
           <Route path='/karya' exact element={<Karya />} />
+          <Route path='/description-lomba' exact element={<Desc_lomba />} />
         </Routes>
         <Footer />
       </div>  
