@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import '../Lomba/Lomba.css'
+import '../../Components/Nav/Nav.css'
 
 const Lomba = () => {
     return (
@@ -12,31 +12,34 @@ const Lomba = () => {
                     </div>
                     <div className='col-10 d-flex justify-content-center'>
                         <ul>
-                            <Link to='/' className='lomba-click'>
+                            <Link to='/' className='nav-click'>
                                 <li >Home</li>
                             </Link>
-                            <Link to='/lomba' className='home-click'>
-                                <li className='lomba-active'>Lomba</li>
+                            <Link to='/lomba' className='nav-click'>
+                                <li className='nav-active'>Lomba</li>
                             </Link>
-                            <Link to='/beasiswa' className='lomba-click'>
+                            <Link to='/beasiswa' className='nav-click'>
                                 <li>Beasiswa</li>
                             </Link>
-                            <Link to='/seminar' className='lomba-click'>
+                            <Link to='/seminar' className='nav-click'>
                                 <li>Seminar</li>
                             </Link>
-                            <Link to='/oprec' className='lomba-click'>
+                            <Link to='/oprec' className='nav-click'>
                                 <li>Open Recruitment</li>
                             </Link>
-                            <Link to='/karya' className='lomba-click'>
+                            <Link to='/karya' className='nav-click'>
                                 <li>Karya</li>
                             </Link>
                         </ul>
                     </div>
                     <div className='col-1'>
-                        Login
+                        <Link to='/login' style={{textDecoration: 'none'}}>
+                            <p className='nav-login'>Login</p>
+                        </Link>
                     </div>
                 </div>
             </div>
+            
             <h1 className="d-flex align-items-end">Description Lomba Page</h1>
         </>
     )

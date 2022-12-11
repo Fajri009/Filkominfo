@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './index.css';
 import App from './App';
+import Login from './Pages/Login/Login.js';
 import Home from './Pages/Home/Home.js';
 import Lomba from './Pages/Lomba/Lomba.js'
 import Desc_lomba from './Pages/Deskripsi/Lomba.js';
@@ -30,6 +31,7 @@ root.render(
           <Route path='/seminar' exact element={<Seminar />} />
           <Route path='/oprec' exact element={<Oprec />} />
           <Route path='/karya' exact element={<Karya />} />
+          <Route path='login' exact element={<Login />} />
           <Route path='/description-lomba' exact element={<Desc_lomba />} />
           <Route path='/description-seminar' exact element={<Desc_seminar />} />
           <Route path='/description-beasiswa' exact element={<Desc_beasiswa />} />

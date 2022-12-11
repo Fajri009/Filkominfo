@@ -6,7 +6,8 @@ import Poster3 from '../../Assets/Poster/Poster3.svg';
 import Poster4 from '../../Assets/Poster/Poster4.svg';
 import Poster5 from '../../Assets/Poster/Poster5.svg';
 import { Link } from 'react-router-dom'
-import './Home.css'
+import '../../Components/Nav/Nav.css'
+import '../Style.css'
 
 const Home = () => {
     const [loading, setLoading] = useState(true);
@@ -34,122 +35,122 @@ const Home = () => {
                     </div>
                     <div className='col-10 d-flex justify-content-center'>
                         <ul>
-                            <Link to='/' className='home-click'>
-                                <li className='home-active'>Home</li>
+                            <Link to='/' className='nav-click'>
+                                <li className='nav-active'>Home</li>
                             </Link>
-                            <Link to='/lomba' className='home-click'>
+                            <Link to='/lomba' className='nav-click'>
                                 <li>Lomba</li>
                             </Link>
-                            <Link to='/beasiswa' className='home-click'>
+                            <Link to='/beasiswa' className='nav-click'>
                                 <li>Beasiswa</li>
                             </Link>
-                            <Link to='/seminar' className='home-click'>
+                            <Link to='/seminar' className='nav-click'>
                                 <li>Seminar</li>
                             </Link>
-                            <Link to='/oprec' className='home-click'>
+                            <Link to='/oprec' className='nav-click'>
                                 <li>Open Recruitment</li>
                             </Link>
-                            <Link to='/karya' className='home-click'>
+                            <Link to='/karya' className='nav-click'>
                                 <li>Karya</li>
                             </Link>
                         </ul>
                     </div>
                     <div className='col-1'>
-                        <div >
-                            <p className='home-login'>Login</p>
-                        </div>
+                        <Link to='/login' style={{textDecoration: 'none'}}>
+                            <p className='nav-login'>Login</p>
+                        </Link>
                     </div>
                 </div>
             </div>
 
             <div className="d-flex" style={{backgroundImage:`url(${Wpp})`,backgroundSize:'1519px', zIndex:'0'}}>
                 <div style={{zIndex:'1'}}>
-                    <p className="home-judul">Lomba Terbaru</p>
-                    <div className='home-posters'>
+                    <p className="style-judul">Lomba Terbaru</p>
+                    <div className='style-posters'>
                         <div className='row'>
                             <Link to='/description-lomba' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-lomba' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-lomba' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-lomba' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                         </div>
                     </div>
 
-                    <p className="home-judul">Beasiswa Terbaru</p>
-                    <div className='home-posters'>
+                    <p className="style-judul">Beasiswa Terbaru</p>
+                    <div className='style-posters'>
                         <div className='row'>
                             <Link to='/description-beasiswa' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-beasiswa' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-beasiswa' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-beasiswa' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                         </div>
                     </div>
 
-                    <p className="home-judul">Seminar Terbaru</p>
-                    <div className='home-posters'>
+                    <p className="style-judul">Seminar Terbaru</p>
+                    <div className='style-posters'>
                         <div className='row'>
                             <Link to='/description-beasiswa' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-beasiswa' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-beasiswa' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-beasiswa' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                         </div>
                     </div>
 
-                    <p className="home-judul">Open Recruitment</p>
-                    <div className='home-posters'>
+                    <p className="style-judul">Open Recruitment</p>
+                    <div className='style-posters'>
                         <div className='row'>
                             <Link to='/description-beasiswa' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster4})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster4})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-beasiswa' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster4})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster4})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-beasiswa' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster4})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster4})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-beasiswa' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster4})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster4})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                         </div>
                     </div>
 
-                    <p className="home-judul">Karya Mahasiswa</p>
-                    <div className='home-posters'>
+                    <p className="style-judul">Karya Mahasiswa</p>
+                    <div className='style-posters'>
                         <div className='row'>
                             <Link to='/description-beasiswa' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster5})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster5})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-beasiswa' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster5})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster5})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-beasiswa' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster5})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster5})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-beasiswa' className='col-3'>
-                                <div className='home-poster' style={{backgroundImage: `url(${Poster5})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster5})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                         </div>
                     </div>

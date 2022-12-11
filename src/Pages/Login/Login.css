@@ -1,0 +1,30 @@
+.login-garis {
+    border: 2px solid black;
+}
+
+.login-template {
+    width: 45%;
+    background-color: #CFF5E7;
+    font-family: "Visby Round CF Medium";
+    font-weight: 800;
+    border-radius: 40px;
+    font-size: 20px;
+}
+
+.login-username {
+    margin-top: 80px;
+}
+
+.login-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-input {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    margin-bottom: 40px;
+    border-radius: 20px;
+    width: 100%;
+    padding-left: 20px;
+}

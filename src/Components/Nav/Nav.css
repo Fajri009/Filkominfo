@@ -1,6 +1,6 @@
 @import url('//db.onlinewebfonts.com/c/85c11596f04944470089a2cae2d7d298?family=Visby+Round+CF+Medium');
 
-.home-garis {
+.nav-garis {
     border: 2px solid black;
 }
 
@@ -14,7 +14,7 @@ ul {
     font-size: 21px;
 }
 
-.home-click {
+.nav-click {
     color: black;
     text-decoration: none;
     z-index: 1;
@@ -22,12 +22,12 @@ ul {
     font-weight: 500;
 }
 
-.home-click:hover {
+.nav-click:hover {
     color: black;
     font-weight: 600;
 }
 
-.home-active {
+.nav-active {
     width: 90px;
     height: 50px;
     display: flex;
@@ -38,51 +38,17 @@ ul {
     font-weight: 600;
 }
 
-.home-login {
+.nav-login {
     font-family: "Visby Round CF Medium";
     font-weight: 600;
     font-size: 20px;
     background-color: #495579;
     color: white;
-    border-radius: 15px; 
+    border-radius: 25px; 
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
     height: 37px;
-}
-
-.home-judul {
-    background-color: #FFEBAD;
-    margin: 30px 0 0 60px;
-    width: 290px;
-    min-height: 50px;
-    font-size: 30px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 10px 14px 10px rgba(0, 0, 0, 0.25);
-    font-family: "Visby Round CF Medium";
-    font-weight: 800;
-}
-
-.home-posters {
-    margin: 25px 0 0 80px;
-}
-
-.home-poster {
-    width: 320px;
-    margin: 5px 0 0 0.1px;
-    filter: drop-shadow(10px 14px 10px rgba(0, 0, 0, 0.25));
-    transition: 0.5s;
-}
-
-.home-poster:hover {
-    transform: scale(1.07);
-    z-index: 2;
-}
-
-.home-poster:hover {
-    cursor: pointer;
+    text-decoration: none;
 }
