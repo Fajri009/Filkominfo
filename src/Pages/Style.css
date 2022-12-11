@@ -27,8 +27,6 @@
 .style-poster:hover {
     transform: scale(1.07);
     z-index: 2;
-}
-
-.style-poster:hover {
+    filter: none;
     cursor: pointer;
 }

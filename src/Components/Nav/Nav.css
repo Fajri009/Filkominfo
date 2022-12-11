@@ -28,7 +28,18 @@ ul {
 }
 
 .nav-active {
-    width: 90px;
+    width: 110px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC510;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.nav-oprec {
+    width: 200px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -51,4 +62,10 @@ ul {
     margin-top: 15px;
     height: 37px;
     text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-login:hover {
+    background-color: #7FE9DE;
+    color: black;
 }
