@@ -1,24 +1,34 @@
 import React from 'react';
+import Slider from 'react-slick';
 import Wpp from '../../Assets/Wallpaper.svg';
+import Logo from '../../Assets/Logo.png'
 import Poster1 from '../../Assets/Poster/Poster1.svg';
 import Poster2 from '../../Assets/Poster/Poster2.svg';
 import Poster3 from '../../Assets/Poster/Poster3.svg';
-import { Link } from 'react-router-dom'
-import '../../Components/Nav/Nav.css'
-import '../Style.css'
+import { Link } from 'react-router-dom';
+import '../../Components/Nav/Nav.css';
+import '../Style.css';
 
 const Lomba = () => {
+    const settings = {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slideToShow: 4,
+        slideToScroll: 1
+    }
+
     return (
         <>
-            <div className='w-100 align-items-start' style={{height: '70px', backgroundColor: '#FFEBAD', left: '0', top: '0'}}>
+            <div className='w-100 align-items-start' style={{height: '70px', backgroundColor: '#FFEBAD', left: '0', top: '0', position:'sticky', zIndex: '100'}}>
                 <div className='row w-100'>
                     <div className='col-1'>
-                        <p>Logo</p>
+                        <img src={Logo} alt='logo' className='nav-logo'></img>
                     </div>
                     <div className='col-10 d-flex justify-content-center'>
                         <ul>
                             <Link to='/' className='nav-click'>
-                                <li >Home</li>
+                                <li>Home</li>
                             </Link>
                             <Link to='/lomba' className='nav-click'>
                                 <li className='nav-active'>Lomba</li>
@@ -45,7 +55,7 @@ const Lomba = () => {
                 </div>
             </div>
 
-            <div className="d-flex" style={{backgroundImage:`url(${Wpp})`,backgroundSize:'cover', zIndex:'0'}}>
+            <div className="d-flex" style={{backgroundImage:`url(${Wpp})`,backgroundSize:'cover', zIndex:'0', paddingBottom: '50px'}}>
                 <div style={{zIndex:'1'}}>
                     <p className="style-judul">Nasional</p>
                     <div className='style-posters'>

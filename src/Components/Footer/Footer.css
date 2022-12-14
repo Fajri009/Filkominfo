@@ -1,0 +1,9 @@
+.footer-garis {
+    border: 2px solid black;
+}
+
+.footer-text {
+    color: #C58940;
+    font-size: 18px;
+    margin-top: -15px;
+}

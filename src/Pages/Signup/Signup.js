@@ -1,11 +1,16 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom'
 import Logo from '../../Assets/Logo.png'
 import Wpp from '../../Assets/Wallpaper.svg';
-import { Link } from 'react-router-dom'
-import '../../Components/Nav/Nav.css'
-import './Login.css'
+import '../Login/Login.css'
 
-const Login = () => {
+const Signup = () => {
+    const navigate = useNavigate();
+
+    function handleClick() {
+        navigate('/login')
+    }
+
     return (
         <>
             <div className='w-100 align-items-start' style={{height: '70px', backgroundColor: '#FFEBAD', left: '0', top: '0', position:'sticky', zIndex: '100'}}>
@@ -50,26 +55,26 @@ const Login = () => {
                             <img src={Logo} alt='logo' style={{width: '40%', marginTop:'50px'}}></img>
 
                             <form style={{width:'70%', marginTop:'50px'}}>
-                                <label for='login-email' className='d-flex align-items-end justify-content-center' style={{marginBottom:'10px'}}>Email address</label>
+                                <label for='login-email' className='d-flex align-items-end justify-content-center' style={{marginBottom:'10px'}}>Email UB</label>
                                 <input type='email' className='login-input' id='login-email' placeholder='Email' required/>
+
+                                <label for='login-name' className='d-flex align-items-end justify-content-center' style={{marginBottom:'10px'}}>Name</label>
+                                <input type='name' className='login-input' id='login-name' placeholder='Name' required/>
+
+                                <label for='login-telp' className='d-flex align-items-end justify-content-center' style={{marginBottom:'10px'}}>Telepon Number</label>
+                                <input type='telp' className='login-input' id='login-telp' placeholder='Telepon Number' required/>
 
                                 <label for='login-password' className='d-flex align-items-end justify-content-center' style={{marginBottom:'10px'}}>Password</label>
                                 <input type='password' className='login-input' id='login-password' placeholder='Password' required/>
 
-                                <button className='login-submit' style={{marginTop:'20px', marginLeft:'25%', width:'50%', height:'50px'}}>
-                                    <p style={{marginTop:'5px', fontWeight:'800'}}>Login</p>
+                                <button type='button' className='login-submit' onClick={handleClick} style={{marginTop:'20px', marginLeft:'25%', width:'50%', height:'50px', marginBottom: '50px'}}>
+                                    <p style={{marginTop:'5px', fontWeight:'800'}}>Sign Up</p>
                                 </button>
 
-                                <p style={{fontWeight:'500', marginTop:'40px'}}>
-                                    <Link to='/login/find-password' style={{textDecoration: 'none'}}>
-                                        Lupa password?
-                                    </Link>
-                                </p>
-
                                 <p style={{fontWeight:'500', marginTop:'-15px'}}>
-                                    Belum punya akun? 
-                                    <Link to='/signup' style={{textDecoration: 'none', marginLeft: '4px'}}>
-                                        Signup
+                                    Sudah punya akun?
+                                    <Link to='/login' style={{textDecoration: 'none', marginLeft: '4px'}}>
+                                        Login
                                     </Link>
                                 </p>
                             </form>
@@ -81,4 +86,4 @@ const Login = () => {
     )
 }
 
-export default Login;
+export default Signup

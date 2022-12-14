@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from '../../Assets/Logo.png'
 import Wpp from '../../Assets/Wallpaper.svg';
 import { Link } from 'react-router-dom'
 import '../../Components/Nav/Nav.css'
-import './Login.css'
+import '../Login/Login.css'
 
-const Login = () => {
+const Find = () => {
+    const [showMsg, setShowMsg] = useState('')
+
+    function handleClick() {
+        setShowMsg('Link untuk mengganti password akan dikirimkan ke email tersebut jika terdapat akun pada email tersebut.')
+    }
+
     return (
         <>
             <div className='w-100 align-items-start' style={{height: '70px', backgroundColor: '#FFEBAD', left: '0', top: '0', position:'sticky', zIndex: '100'}}>
@@ -53,23 +59,15 @@ const Login = () => {
                                 <label for='login-email' className='d-flex align-items-end justify-content-center' style={{marginBottom:'10px'}}>Email address</label>
                                 <input type='email' className='login-input' id='login-email' placeholder='Email' required/>
 
-                                <label for='login-password' className='d-flex align-items-end justify-content-center' style={{marginBottom:'10px'}}>Password</label>
-                                <input type='password' className='login-input' id='login-password' placeholder='Password' required/>
-
-                                <button className='login-submit' style={{marginTop:'20px', marginLeft:'25%', width:'50%', height:'50px'}}>
-                                    <p style={{marginTop:'5px', fontWeight:'800'}}>Login</p>
+                                <button type='button' className='login-submit' onClick={handleClick} style={{marginTop:'20px', marginLeft:'25%', width:'50%', height:'50px'}}>
+                                    <p style={{marginTop:'5px', fontWeight:'800'}}>Find</p>
                                 </button>
-
-                                <p style={{fontWeight:'500', marginTop:'40px'}}>
-                                    <Link to='/login/find-password' style={{textDecoration: 'none'}}>
-                                        Lupa password?
-                                    </Link>
-                                </p>
-
-                                <p style={{fontWeight:'500', marginTop:'-15px'}}>
-                                    Belum punya akun? 
-                                    <Link to='/signup' style={{textDecoration: 'none', marginLeft: '4px'}}>
-                                        Signup
+                                
+                                <p style={{fontWeight:'500', marginTop:'30px', fontSize:'20px'}}>{showMsg}</p>
+                            
+                                <p style={{fontWeight:'500', marginTop:'-10px', fontSize:'20px', marginBottom:'20px'}}>
+                                    <Link to='/login' style={{textDecoration: 'none'}}>
+                                        Kembali Ke Login
                                     </Link>
                                 </p>
                             </form>
@@ -81,4 +79,4 @@ const Login = () => {
     )
 }
 
-export default Login;
+export default Find;

@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './index.css';
-import App from './App';
 import Login from './Pages/Login/Login.js';
+import Password from './Pages/Password/Find.js'
+import Signup from './Pages/Signup/Signup.js'
 import Home from './Pages/Home/Home.js';
 import Lomba from './Pages/Lomba/Lomba.js'
 import Desc_lomba from './Pages/Deskripsi/Lomba.js';
 import Seminar from './Pages/Seminar/Seminar.js';
 import Desc_seminar from './Pages/Deskripsi/Seminar.js'
+import Buat_seminar from './Pages/Seminar/Buat-seminar.js'
 import Beasiswa from './Pages/Beasiswa/Beasiswa.js';
 import Desc_beasiswa from './Pages/Deskripsi/Beasiswa.js'
 import Oprec from './Pages/Oprec/Oprec.js';
@@ -26,17 +28,20 @@ root.render(
       <div className='App'>
         <Routes>
           <Route path='/' exact element={<Home />} />
-          <Route path='/lomba' exact element={<Lomba />} />
-          <Route path='/beasiswa' exact element={<Beasiswa />} />
-          <Route path='/seminar' exact element={<Seminar />} />
-          <Route path='/oprec' exact element={<Oprec />} />
-          <Route path='/karya' exact element={<Karya />} />
+          <Route path='lomba' exact element={<Lomba />} />
+          <Route path='beasiswa' exact element={<Beasiswa />} />
+          <Route path='seminar' exact element={<Seminar />} />
+          <Route path='oprec' exact element={<Oprec />} />
+          <Route path='karya' exact element={<Karya />} />
           <Route path='login' exact element={<Login />} />
-          <Route path='/description-lomba' exact element={<Desc_lomba />} />
-          <Route path='/description-seminar' exact element={<Desc_seminar />} />
-          <Route path='/description-beasiswa' exact element={<Desc_beasiswa />} />
-          <Route path='/description-oprec' exact element={<Desc_oprec />} />
-          <Route path='/description-karya' exact element={<Desc_karya/>} />
+          <Route path='login/find-password' exact element={<Password />} />
+          <Route path='signup' exact element={<Signup />} />
+          <Route path='description-lomba' exact element={<Desc_lomba />} />
+          <Route path='description-seminar' exact element={<Desc_seminar />} />
+          <Route path='description-beasiswa' exact element={<Desc_beasiswa />} />
+          <Route path='description-oprec' exact element={<Desc_oprec />} />
+          <Route path='description-karya' exact element={<Desc_karya/>} />
+          <Route path='seminar/buat' exact element={<Buat_seminar />} />
         </Routes>
         <Footer />
       </div>  

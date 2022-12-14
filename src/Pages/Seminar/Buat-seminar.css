@@ -1,10 +1,10 @@
-.login-garis {
+.seminar-garis {
     border: 2px solid black;
 }
 
-.login-template {
-    width: 45%;
-    background-color: #CFF5E7;
+.seminar-template {
+    width: 80%;
+    background-color: #FFEBAD;
     font-family: "Visby Round CF Medium";
     font-weight: 800;
     border-radius: 40px;
@@ -12,11 +12,7 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.184);
 }
 
-.login-username {
-    margin-top: 80px;
-}
-
-.login-input {
+.seminar-input {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
     margin-bottom: 40px;
     border-radius: 20px;
@@ -26,25 +22,26 @@
     outline: none;
 }
 
-.login-input:focus {
+.seminar-input:focus {
     border: 5px solid rgba(78, 187, 227, 0.774);
     box-shadow: none;
     transition: 0.25s;
 }
 
-.login-submit {
+.seminar-submit {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: none;
     transition: 0.25s;
 }
 
-.login-submit:hover {
-    background-color: #FFF6BF;
+.seminar-submit:hover {
+    background-color: #C58940;
+    color: white;
     box-shadow: none;
 }
 
-.login-fadeInUp {
+.seminar-fadeInUp {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
     -webkit-animation-duration: 1s;
@@ -75,4 +72,4 @@
     -webkit-transform: none;
     transform: none;
     }
-    } 
+} 

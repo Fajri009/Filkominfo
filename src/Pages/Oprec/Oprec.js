@@ -1,14 +1,15 @@
 import React from 'react';
+import Logo from '../../Assets/Logo.png'
 import { Link } from 'react-router-dom'
 import '../../Components/Nav/Nav.css'
 
 const Oprec = () => {
     return (
         <>
-            <div className='w-100 align-items-start' style={{height: '70px', backgroundColor: '#FFEBAD', left: '0', top: '0'}}>
+            <div className='w-100 align-items-start' style={{height: '70px', backgroundColor: '#FFEBAD', left: '0', top: '0', position:'sticky', zIndex: '100'}}>
                 <div className='row w-100'>
                     <div className='col-1'>
-                        <p>Logo</p>
+                        <img src={Logo} alt='logo' className='nav-logo'></img>
                     </div>
                     <div className='col-10 d-flex justify-content-center'>
                         <ul>
@@ -19,10 +20,10 @@ const Oprec = () => {
                                 <li>Lomba</li>
                             </Link>
                             <Link to='/beasiswa' className='nav-click'>
-                                <li >Beasiswa</li>
+                                <li>Beasiswa</li>
                             </Link>
                             <Link to='/seminar' className='nav-click'>
-                                <li >Seminar</li>
+                                <li>Seminar</li>
                             </Link>
                             <Link to='/oprec' className='nav-click'>
                                 <li className='nav-oprec'>Open Recruitment</li>

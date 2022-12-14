@@ -1,9 +1,5 @@
 @import url('//db.onlinewebfonts.com/c/85c11596f04944470089a2cae2d7d298?family=Visby+Round+CF+Medium');
 
-.nav-garis {
-    border: 2px solid black;
-}
-
 ul {
     width: 55%;
     display: flex;
@@ -12,6 +8,11 @@ ul {
     list-style: none;
     min-height: 65px;
     font-size: 21px;
+}
+
+.nav-logo {
+    width: 50%;
+    margin: 10px 0 0 20px;
 }
 
 .nav-click {

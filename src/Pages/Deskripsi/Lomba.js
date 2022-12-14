@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '../../Assets/Logo.png'
 import { Link } from 'react-router-dom'
 import '../../Components/Nav/Nav.css'
 
@@ -8,7 +9,7 @@ const Lomba = () => {
             <div className='w-100 align-items-start' style={{height: '70px', backgroundColor: '#FFEBAD', left: '0', top: '0'}}>
                 <div className='row w-100'>
                     <div className='col-1'>
-                        <p>Logo</p>
+                        <img src={Logo} alt='logo' className='nav-logo'></img>
                     </div>
                     <div className='col-10 d-flex justify-content-center'>
                         <ul>
@@ -39,7 +40,7 @@ const Lomba = () => {
                     </div>
                 </div>
             </div>
-            
+
             <h1 className="d-flex align-items-end">Description Lomba Page</h1>
         </>
     )
