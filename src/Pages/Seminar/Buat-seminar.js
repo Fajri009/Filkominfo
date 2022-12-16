@@ -1,25 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from '../../Assets/Logo.png'
 import { Link } from 'react-router-dom'
 import Wpp from '../../Assets/Wallpaper.svg';
 import '../../Components/Nav/Nav.css'
 import './Buat-seminar.css'
-import { RiImageAddFill } from 'react-icons/ri'
 
 const BuatSeminar = () => {
     const [resp, setResp] = useState('nav-menu');
-    const [image, setImage] = useState(RiImageAddFill)
+    const [image, setImage] = useState();
 
     const navToggle = () => {
         resp === 'nav-menu' ? setResp('nav-menu nav-resp') : setResp('nav-menu')
     }
-    
+
     const imageHandler = (e) => {
-        const reader = new FileReader();
-        reader.onload = () => {
-            setImage({image: reader.result})
-        }
-        reader.readAsDataURL(e.target.files[0])
+        setImage(URL.createObjectURL(e.target.files[0]))
     }
 
     return (
@@ -81,9 +76,8 @@ const BuatSeminar = () => {
                             <div className='col-12 col-md-4 seminar-poster d-flex justify-content-center row'>
                                 <p className='d-flex align-items-center justify-content-center' style={{height:'50px', marginTop:'50px'}}>Poster Seminar</p>
                                 <label>
-                                    {image}
-                                    <br />
-                                    <input type='file' onChange={imageHandler} name='addImage' accept='image/png, image/jpeg, image/webp'></input>
+                                    <input type='file' onChange={imageHandler} name='addImage' accept='image/*'></input>
+                                    <img src={image} style={{width:'100%'}}/>
                                 </label>
                             </div>
                             <div className='col-12 col-md-8 d-flex justify-content-center'>

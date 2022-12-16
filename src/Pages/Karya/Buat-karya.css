@@ -41,6 +41,28 @@
     box-shadow: none;
 }
 
+.karya-poster label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: -188px;
+    margin-left: 90px;
+    height: 520px;
+    width: 380px;
+}
+
+.karya-poster input {
+    display: none;
+}
+
+.karya-surat {
+    display: none;
+}
+
 .karya-fadeInUp {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
@@ -73,3 +95,18 @@
     transform: none;
     }
 } 
+
+.karya-poster p {
+    margin-left: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .karya-poster label {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .karya-poster p {
+        margin-left:0;
+    }
+}

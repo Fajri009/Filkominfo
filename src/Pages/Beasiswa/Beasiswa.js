@@ -67,8 +67,8 @@ const Beasiswa = () => {
             </div>
             <div className="d-flex" style={{backgroundImage:`url(${Wpp})`,backgroundSize:'cover', zIndex:'0', paddingBottom: '50px', overflow:'hidden'}}>
                 <div style={{zIndex:'1'}}>
-                    <h1>Beasiswa Page</h1>
-                    <div className="wrapper" style={{marginLeft: '100px'}}>
+                    <p className="style-judul fadeInLeftBig">Lomba Terbaru</p>
+                    <div className="wrapper" style={{marginLeft: '100px', marginTop: '25px'}}>
                         <i id="left" className="fa-solid fa-angle-left"></i>
                         <div className="carousel d-flex">
                             <Link to='/description-lomba' className='col-3'>
