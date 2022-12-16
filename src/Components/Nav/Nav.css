@@ -11,8 +11,12 @@ ul {
 }
 
 .nav-logo {
-    width: 50%;
+    width: 50px;
     margin: 10px 0 0 20px;
+}
+
+.nav-logo2 {
+    display: none;
 }
 
 .nav-click {
@@ -54,6 +58,7 @@ ul {
     font-family: "Visby Round CF Medium";
     font-weight: 600;
     font-size: 20px;
+    width: 110px;
     background-color: #495579;
     color: white;
     border-radius: 25px; 
@@ -69,4 +74,135 @@ ul {
 .nav-login:hover {
     background-color: #7FE9DE;
     color: black;
+}
+
+.nav-login:active {
+    background-color: #7FE9DE;
+    color: black;
+}
+
+.nav-toggle div {
+    width: 40px;
+    height: 4px;
+    margin: 8px;
+    background: black;
+    transition: 0.3s ease-in;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    display: none;
+}
+
+.nav-list {
+    width: 60%;
+}
+
+.nav-garis {
+    border: 2px solid black;
+}
+
+.nav-login-resp {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-list {
+        width: 85%;
+        margin-right: -30px;
+    }
+
+    .nav-login {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .nav-list {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .nav-login {
+        margin-left: 20px;
+    }
+
+    .nav-active {
+        width: 105px;
+        height: 43px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        font-size: 30px;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-logo2 {
+        display:flex;
+        width: 50px;
+        margin: 10px 0 0 20px;
+    }
+
+    .nav-menu {
+        font-size: 30px;
+        position: fixed;
+        top: 69px;
+        right: 20;
+        height: 93%;
+        width: 100%;
+        background: #FFEBAD;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+
+    .nav-active {
+        width: 140px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFC510;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+
+    .nav-login-resp {
+        display: flex;
+        width: 170px;
+        height: 50px;
+        margin-top: -10px;
+        font-family: "Visby Round CF Medium";
+        font-weight: 600;
+        background-color: #495579;
+        color: white;
+        border-radius: 25px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: 0.2s ease-in-out;
+    }
+
+    .nav-login-resp:hover {
+        background-color: #7FE9DE;
+        color: black;
+    }
+
+    .nav-login {
+        display: none;
+    }
+}
+
+.nav-resp {
+    transform: translateX(0);
 }

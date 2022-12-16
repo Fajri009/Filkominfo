@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './index.css';
 import Login from './Pages/Login/Login.js';
-import Password from './Pages/Password/Find.js'
+import FindPassword from './Pages/Password/Find.js'
+import ChangePassword from './Pages/Password/Change.js'
 import Signup from './Pages/Signup/Signup.js'
 import Home from './Pages/Home/Home.js';
 import Lomba from './Pages/Lomba/Lomba.js'
@@ -17,6 +18,7 @@ import Oprec from './Pages/Oprec/Oprec.js';
 import Desc_oprec from './Pages/Deskripsi/Oprec.js'
 import Karya from './Pages/Karya/Karya.js';
 import Desc_karya from './Pages/Deskripsi/Karya.js'
+import Buat_karya from './Pages/Karya/Buat-karya.js'
 import Footer from './Components/Footer/Footer.js'
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -34,7 +36,8 @@ root.render(
           <Route path='oprec' exact element={<Oprec />} />
           <Route path='karya' exact element={<Karya />} />
           <Route path='login' exact element={<Login />} />
-          <Route path='login/find-password' exact element={<Password />} />
+          <Route path='login/find-password' exact element={<FindPassword />} />
+          <Route path='login/change-password' exact element={<ChangePassword />} />
           <Route path='signup' exact element={<Signup />} />
           <Route path='description-lomba' exact element={<Desc_lomba />} />
           <Route path='description-seminar' exact element={<Desc_seminar />} />
@@ -42,6 +45,7 @@ root.render(
           <Route path='description-oprec' exact element={<Desc_oprec />} />
           <Route path='description-karya' exact element={<Desc_karya/>} />
           <Route path='seminar/buat' exact element={<Buat_seminar />} />
+          <Route path='karya/buat' exact element={<Buat_karya />} />
         </Routes>
         <Footer />
       </div>  

@@ -41,6 +41,12 @@
     box-shadow: none;
 }
 
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .seminar-fadeInUp {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;

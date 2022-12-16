@@ -1,20 +1,26 @@
 import React, { useState } from 'react';
 import Logo from '../../Assets/Logo.png'
-import { Link } from 'react-router-dom'
-import '../../Components/Nav/Nav.css'
-import Poster3 from '../../Assets/Poster/Poster3.svg';
 import Wpp from '../../Assets/Wallpaper.svg';
+import { Link, useNavigate } from 'react-router-dom'
+import '../../Components/Nav/Nav.css'
+import '../Login/Login.css'
 
-const Seminar = () => {
+const Change = () => {
+    const navigate = useNavigate();
+
+    function handleClick() {
+        navigate('/login')
+    }
+
     const [resp, setResp] = useState('nav-menu');
 
     const navToggle = () => {
         resp === 'nav-menu' ? setResp('nav-menu nav-resp') : setResp('nav-menu')
     }
-
+    
     return (
         <>
-            <div className='w-100 align-items-start' style={{height: '70px', backgroundColor: '#FFEBAD', left: '0', top: '0', position:'sticky', zIndex: '100'}}>
+            <div className='w-100 align-items-start' style={{height: '70px', backgroundColor: '#FFEBAD', left: '0', top: '0', position:'sticky', zIndex: '1000'}}>
                 <div className='row' style={{width: '100%'}}>
                     <div className='col-1 '>
                         <img src={Logo} alt='logo' className='nav-logo'></img>
@@ -31,7 +37,7 @@ const Seminar = () => {
                                     <li>Beasiswa</li>
                                 </Link>
                                 <Link to='/seminar' className='nav-click'>
-                                    <li className='nav-active'>Seminar</li>
+                                    <li>Seminar</li>
                                 </Link>
                                 <Link to='/oprec' className='nav-click'>
                                     <li>Open Recruitment</li>
@@ -45,7 +51,7 @@ const Seminar = () => {
                         </ul>
                     </div>
                     
-                    <div className='col-md-2 col-lg-2 col-xl-1 '>
+                    <div className='col-md-2 col-lg-2 col-xl-1' style={{overflow: 'hidden'}}>
                         <Link to='/login' style={{textDecoration: 'none'}}>
                             <p className='nav-login'>Login</p>
                         </Link>
@@ -64,33 +70,24 @@ const Seminar = () => {
                 </div>
             </div>
 
-            <div className="d-flex w-100" style={{backgroundImage:`url(${Wpp})`,backgroundSize:'1519px', zIndex:'0', paddingBottom: '50px'}}>
+            <div className="" style={{backgroundImage:`url(${Wpp})`,backgroundSize:'cover', zIndex:'0', paddingBottom: '200px'}}>
                 <div style={{zIndex:'1'}}>
-                    <p className="style-judul fadeInLeftBig">Seminar Terbaru</p>
-                    <div className='style-posters fadeInRight'>
-                        <div className='row'>
-                            <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
-                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
-                            </Link>
-                            <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
-                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
-                            </Link>
-                            <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
-                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
-                            </Link>
-                            <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
-                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
-                            </Link>
-                        </div>
-                    </div>
+                    <div className='d-flex align-items-end justify-content-center login-fadeInUp'>
+                        <div className='login-template align-items-end justify-content-center row' style={{marginTop:'80px'}}>
+                            <img src={Logo} alt='logo' style={{width: '40%', marginTop:'50px'}}></img>
 
-                    <div className='fadeInUp' style={{backgroundColor:'#CFF5E7', fontFamily:'Visby Round CF Medium', margin:'30px 0 0 80px', fontSize:'21px', borderRadius: '15px', paddingTop: '13px', paddingBottom: '1px'}}>
-                        <p style={{fontWeight:'800', marginLeft: '20px'}}>
-                            Anda Ingin Membuat Seminar? 
-                            <Link to='/seminar/buat' style={{textDecoration: 'none', marginLeft: '4px'}}>
-                                Klik Disini
-                            </Link>
-                        </p>
+                            <form style={{width:'70%', marginTop:'50px'}}>
+                                <label for='login-new-password' className='d-flex align-items-end justify-content-center' style={{marginBottom:'10px'}}>New Password</label>
+                                <input type='password' className='login-input' id='login-new-password' placeholder='New Password' required/>
+
+                                <label for='login-password' className='d-flex align-items-end justify-content-center' style={{marginBottom:'10px'}}>Password</label>
+                                <input type='password' className='login-input' id='login-password' placeholder='Password' required/>
+
+                                <button type='button' className='login-submit' onClick={handleClick} style={{marginTop:'20px', marginLeft:'25%', width:'50%', height:'50px', marginBottom:'30px'}}>
+                                    <p style={{marginTop:'5px', fontWeight:'800'}}>Change</p>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -98,4 +95,4 @@ const Seminar = () => {
     )
 }
 
-export default Seminar;
+export default Change;
