@@ -8,14 +8,18 @@ import { RiImageAddFill } from 'react-icons/ri'
 
 const BuatSeminar = () => {
     const [resp, setResp] = useState('nav-menu');
+    const [image, setImage] = useState(RiImageAddFill)
 
     const navToggle = () => {
         resp === 'nav-menu' ? setResp('nav-menu nav-resp') : setResp('nav-menu')
     }
-
-    const onSelectFile = (event) => {
-        const selectedFiles = event.target.files;
-        console.log(selectedFiles)
+    
+    const imageHandler = (e) => {
+        const reader = new FileReader();
+        reader.onload = () => {
+            setImage({image: reader.result})
+        }
+        reader.readAsDataURL(e.target.files[0])
     }
 
     return (
@@ -74,9 +78,12 @@ const BuatSeminar = () => {
                 <div style={{zIndex:'1'}}>
                     <div className='d-flex align-items-end justify-content-center seminar-fadeInUp'>
                         <div className='seminar-template justify-content-center row' style={{marginTop:'80px'}}>
-                            <div className='col-12 col-md-4 seminar-garis'>
+                            <div className='col-12 col-md-4 seminar-poster d-flex justify-content-center row'>
+                                <p className='d-flex align-items-center justify-content-center' style={{height:'50px', marginTop:'50px'}}>Poster Seminar</p>
                                 <label>
-                                    <input type='file' name='addImage' onChange={onSelectFile} accept='image/png, image/jpeg, image/webp'></input>
+                                    {image}
+                                    <br />
+                                    <input type='file' onChange={imageHandler} name='addImage' accept='image/png, image/jpeg, image/webp'></input>
                                 </label>
                             </div>
                             <div className='col-12 col-md-8 d-flex justify-content-center'>

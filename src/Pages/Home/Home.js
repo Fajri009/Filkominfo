@@ -102,7 +102,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <p className="style-judul fadeInLeftBigHome">Beasiswa Terbaru</p>
+                    <p className="style-judul fadeInLeftBig">Beasiswa Terbaru</p>
                     <div className='style-posters fadeInRight'>
                         <div className='row'>
                             <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
@@ -120,7 +120,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <p className="style-judul fadeInLeftBigHome">Seminar Terbaru</p>
+                    <p className="style-judul fadeInLeftBig">Seminar Terbaru</p>
                     <div className='style-posters fadeInRight'>
                         <div className='row'>
                             <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
@@ -138,7 +138,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <p className="style-judul fadeInLeftBigHome">Open Recruitment</p>
+                    <p className="style-judul fadeInLeftBig">Open Recruitment</p>
                     <div className='style-posters fadeInRight'>
                         <div className='row'>
                             <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
@@ -156,7 +156,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <p className="style-judul fadeInLeftBigHome">Karya Mahasiswa</p>
+                    <p className="style-judul fadeInLeftBig">Karya Mahasiswa</p>
                     <div className='style-posters fadeInRight'>
                         <div className='row'>
                             <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>

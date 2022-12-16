@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import '../../Components/Nav/Nav.css'
 import Poster3 from '../../Assets/Poster/Poster3.svg';
 import Wpp from '../../Assets/Wallpaper.svg';
+import '../Style.css'
 
 const Seminar = () => {
     const [resp, setResp] = useState('nav-menu');
@@ -64,7 +65,7 @@ const Seminar = () => {
                 </div>
             </div>
 
-            <div className="d-flex w-100" style={{backgroundImage:`url(${Wpp})`,backgroundSize:'1519px', zIndex:'0', paddingBottom: '50px'}}>
+            <div className="d-flex w-100" style={{backgroundImage:`url(${Wpp})`,backgroundSize:'1519px', zIndex:'0', paddingBottom: '50px', overflow:'hidden'}}>
                 <div style={{zIndex:'1'}}>
                     <p className="style-judul fadeInLeftBig">Seminar Terbaru</p>
                     <div className='style-posters fadeInRight'>
@@ -84,7 +85,7 @@ const Seminar = () => {
                         </div>
                     </div>
 
-                    <div className='fadeInUp' style={{backgroundColor:'#CFF5E7', fontFamily:'Visby Round CF Medium', margin:'30px 0 0 80px', fontSize:'21px', borderRadius: '15px', paddingTop: '13px', paddingBottom: '1px'}}>
+                    <div className='fadeInUp klik-disini' style={{backgroundColor:'#CFF5E7', fontFamily:'Visby Round CF Medium', margin:'30px 0 0 80px', fontSize:'21px', borderRadius: '15px', paddingTop: '13px', paddingBottom: '1px'}}>
                         <p style={{fontWeight:'800', marginLeft: '20px'}}>
                             Anda Ingin Membuat Seminar? 
                             <Link to='/seminar/buat' style={{textDecoration: 'none', marginLeft: '4px'}}>

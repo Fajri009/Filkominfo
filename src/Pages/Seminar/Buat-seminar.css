@@ -22,6 +22,17 @@
     outline: none;
 }
 
+.seminar-pdf {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    margin-bottom: 40px;
+    border-radius: 20px;
+    width: 100%;
+    padding-left: 20px;
+    border: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
 .seminar-input:focus {
     border: 5px solid rgba(78, 187, 227, 0.774);
     box-shadow: none;
@@ -41,10 +52,25 @@
     box-shadow: none;
 }
 
-label {
+.seminar-poster label {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 20px;
+    height: 350px;
+    margin-top: -300px;
+    width: 280px;
+}
+
+.seminar-poster input {
+    display: none;
+}
+
+.seminar-surat {
+    display: none;
 }
 
 .seminar-fadeInUp {

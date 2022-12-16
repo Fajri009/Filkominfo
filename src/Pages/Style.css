@@ -134,4 +134,22 @@
     -webkit-transform: none;
     transform: none;
     }
-    } 
+}
+
+@media screen and (max-width: 1200px) {
+    .klik-disini {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .klik-disini {
+        width: 83%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .klik-disini {
+        width: 79%;
+    }
+}
