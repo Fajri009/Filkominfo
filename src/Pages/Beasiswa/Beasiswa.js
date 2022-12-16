@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import Logo from '../../Assets/Logo.png'
 import '../../Components/Nav/Nav.css'
+import Wpp from '../../Assets/Wallpaper.svg';
+import Poster3 from '../../Assets/Poster/Poster3.svg';
+import './Beasiswa.css';
 
 const Beasiswa = () => {
     const [resp, setResp] = useState('nav-menu');
@@ -12,6 +15,7 @@ const Beasiswa = () => {
 
     return (
         <>
+            <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"></link>
             <div className='w-100 align-items-start' style={{height: '70px', backgroundColor: '#FFEBAD', left: '0', top: '0', position:'sticky', zIndex: '1000'}}>
                 <div className='row' style={{width: '100%'}}>
                     <div className='col-1 '>
@@ -61,8 +65,32 @@ const Beasiswa = () => {
                     </div>
                 </div>
             </div>
-            
-            <h1>Beasiswa Page</h1>
+            <div className="d-flex" style={{backgroundImage:`url(${Wpp})`,backgroundSize:'cover', zIndex:'0', paddingBottom: '50px', overflow:'hidden'}}>
+                <div style={{zIndex:'1'}}>
+                    <h1>Beasiswa Page</h1>
+                    <div className="wrapper" style={{marginLeft: '100px'}}>
+                        <i id="left" className="fa-solid fa-angle-left"></i>
+                        <div className="carousel d-flex">
+                            <Link to='/description-lomba' className='col-3'>
+                            <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-lomba' className='col-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-lomba' className='col-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-lomba' className='col-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-lomba' className='col-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                        </div>
+                        <i id="right" className="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>    
         </>
     )
 }
