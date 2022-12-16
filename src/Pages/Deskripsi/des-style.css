@@ -1,32 +1,8 @@
-.des-container{
-    font-family: "Visby Round CF Medium";
-}
+/* .des-poster {
+    width: 70%;
+    height: 85%;
+} */
 
-.des-image{
-    filter: drop-shadow(10px 14px 10px rgba(0, 0, 0, 0.25));
-}
-
-.des-desc{
-    filter: drop-shadow(10px 14px 10px rgba(0, 0, 0, 0.25));
-}
-
-@media screen and (max-width: 1200px) {
-    .des-container{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 990px) {
-    .des-container{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .des-container{
-        display: flex;
-        flex-direction: column;
-    }
+.des-garis {
+    border: 2px solid black;
 }

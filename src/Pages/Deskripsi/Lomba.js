@@ -16,7 +16,7 @@ const Lomba = () => {
 
     return (
         <>
-           <div className='w-100 align-items-start' style={{height: '70px', backgroundColor: '#FFEBAD', left: '0', top: '0', position:'sticky', zIndex: '1000'}}>
+            <div className='w-100 align-items-start' style={{height: '70px', backgroundColor: '#FFEBAD', left: '0', top: '0', position:'sticky', zIndex: '1000'}}>
                 <div className='row' style={{width: '100%'}}>
                     <div className='col-1 '>
                         <img src={Logo} alt='logo' className='nav-logo'></img>
@@ -24,10 +24,10 @@ const Lomba = () => {
                     <div className='col-md-9 col-lg-9 col-xl-10 d-flex justify-content-center '>
                         <ul className={`nav-list ${resp}`}>
                                 <Link to='/' className='nav-click'>
-                                    <li className='nav-active'>Home</li>
+                                    <li>Home</li>
                                 </Link>
                                 <Link to='/lomba' className='nav-click'>
-                                    <li>Lomba</li>
+                                    <li className='nav-active'>Lomba</li>
                                 </Link>
                                 <Link to='/beasiswa' className='nav-click'>
                                     <li>Beasiswa</li>
@@ -65,7 +65,30 @@ const Lomba = () => {
                     </div>
                 </div>
             </div>
-            <div className='des-container d-flex row' style={{paddingBottom:'60px', backgroundImage:`url(${Wpp})`, backGroundSize: 'cover',textDecoration: 'none', justifyContent:'center', paddingBottom: '30px'}}>
+
+            <div className="w-100" style={{backgroundImage:`url(${Wpp})`,backgroundSize:'cover', zIndex:'0', paddingBottom: '50px', overflow:'hidden', fontFamily: 'Visby Round CF Medium'}}>
+                <div style={{zIndex:'1'}}>
+                    <div className='row'>
+                        <div className='col-5 d-flex justify-content-center fadeInLeftBig'>
+                            <div className='des-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', marginTop:'50px', marginLeft:'20px', width: '80%', height: '95%'}} />
+                        </div>
+
+                        <div className='col-7 fadeInRight'>
+                            <div className='row' style={{backgroundColor:'#CFF5E7', width: '95%', height: '700px', marginTop:'50px', borderRadius: '20px', marginRight: '80px'}}>
+                                <div className='col-12 d-flex justify-content-center'>
+                                    <p style={{fontWeight: '800', fontSize:'40px', marginTop: '10px'}}>Lomba Desain Poster Digital</p>
+                                </div>
+                                <div className='col-12' style={{height: '650px', paddingLeft: '20px', paddingRight: '20px'}}>
+                                    <p style={{fontWeight: '200', fontSize:'20px', marginTop: '10px'}}>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* <div className='des-container d-flex row' style={{paddingBottom:'60px', backgroundImage:`url(${Wpp})`, backGroundSize: 'cover',textDecoration: 'none', justifyContent:'center', paddingBottom: '30px'}}>
                 <div className='des-image col-5' style={{ marginLeft: '120px', marginTop:'30px'}}>
                     <img src={Poster1}/>
                 </div>
@@ -77,7 +100,7 @@ const Lomba = () => {
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

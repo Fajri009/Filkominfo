@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom'
 import Logo from '../../Assets/Logo.png'
 import '../../Components/Nav/Nav.css'
 import Wpp from '../../Assets/Wallpaper.svg';
-import Poster3 from '../../Assets/Poster/Poster3.svg';
-import './Beasiswa.css';
+import Poster2 from '../../Assets/Poster/Poster2.svg';
 
 const Beasiswa = () => {
     const [resp, setResp] = useState('nav-menu');
@@ -65,29 +64,43 @@ const Beasiswa = () => {
                     </div>
                 </div>
             </div>
-            <div className="d-flex" style={{backgroundImage:`url(${Wpp})`,backgroundSize:'cover', zIndex:'0', paddingBottom: '50px', overflow:'hidden'}}>
+
+            <div className="d-flex w-100" style={{backgroundImage:`url(${Wpp})`,backgroundSize:'cover', zIndex:'0', paddingBottom: '50px', overflow:'hidden'}}>
                 <div style={{zIndex:'1'}}>
-                    <p className="style-judul fadeInLeftBig">Lomba Terbaru</p>
-                    <div className="wrapper" style={{marginLeft: '100px', marginTop: '25px'}}>
-                        <i id="left" className="fa-solid fa-angle-left"></i>
-                        <div className="carousel d-flex">
-                            <Link to='/description-lomba' className='col-3'>
-                            <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                    <p className="style-judul fadeInLeftBig">Nasional</p>
+                    <div className='style-posters fadeInRight'>
+                        <div className='row'>
+                            <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
-                            <Link to='/description-lomba' className='col-3'>
-                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
-                            <Link to='/description-lomba' className='col-3'>
-                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
-                            <Link to='/description-lomba' className='col-3'>
-                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
-                            </Link>
-                            <Link to='/description-lomba' className='col-3'>
-                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            <Link to='/description-lomba' className='col-md-6 col-lg-12 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                         </div>
-                        <i id="right" className="fa-solid fa-angle-right"></i>
+                    </div>
+
+                    <p className="style-judul fadeInLeftBig">Internasional</p>
+                    <div className='style-posters fadeInRight'>
+                        <div className='row'>
+                            <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>    

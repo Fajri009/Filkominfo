@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Logo from '../../Assets/Logo.png'
 import { Link } from 'react-router-dom'
-import '../../Components/Nav/Nav.css'
-
+import '../../Components/Nav/Nav.css';
+import Wpp from '../../Assets/Wallpaper.svg';
+import Poster5 from '../../Assets/Poster/Poster5.svg';
 
 const Karya = () => {
     const [resp, setResp] = useState('nav-menu');
@@ -63,7 +64,54 @@ const Karya = () => {
                 </div>
             </div>
             
-            <h1>Karya Page</h1>
+            <div className="d-flex w-100" style={{backgroundImage:`url(${Wpp})`,backgroundSize:'cover', zIndex:'0', paddingBottom: '50px', overflow:'hidden'}}>
+                <div style={{zIndex:'1'}}>
+                    <p className="style-judul fadeInLeftBig">Art</p>
+                    <div className='style-posters fadeInRight'>
+                        <div className='row'>
+                            <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster5})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster5})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster5})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-lomba' className='col-md-6 col-lg-12 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster5})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                        </div>
+                    </div>
+
+                    <p className="style-judul fadeInLeftBig">Software</p>
+                    <div className='style-posters fadeInRight'>
+                        <div className='row'>
+                            <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster5})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster5})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster5})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster5})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div className='fadeInUp klik-disini' style={{backgroundColor:'#CFF5E7', fontFamily:'Visby Round CF Medium', margin:'30px 0 0 80px', fontSize:'21px', borderRadius: '15px', paddingTop: '13px', paddingBottom: '1px'}}>
+                        <p style={{fontWeight:'800', marginLeft: '20px'}}>
+                            Ingin Memamerkan Karya Anda?
+                            <Link to='/karya/buat' style={{textDecoration: 'none', marginLeft: '4px'}}>
+                                Klik Disini
+                            </Link>
+                        </p>
+                    </div>
+                </div>
+            </div> 
         </>
     )
 }

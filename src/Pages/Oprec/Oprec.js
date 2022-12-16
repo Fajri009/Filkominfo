@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Logo from '../../Assets/Logo.png'
 import { Link } from 'react-router-dom'
 import '../../Components/Nav/Nav.css'
+import Wpp from '../../Assets/Wallpaper.svg';
+import Poster4 from '../../Assets/Poster/Poster4.svg';
 
 const Oprec = () => {
     const [resp, setResp] = useState('nav-menu');
@@ -62,7 +64,45 @@ const Oprec = () => {
                 </div>
             </div>
             
-            <h1>Open Recruitment Page</h1>
+            <div className="d-flex w-100" style={{backgroundImage:`url(${Wpp})`,backgroundSize:'cover', zIndex:'0', paddingBottom: '50px', overflow:'hidden'}}>
+                <div style={{zIndex:'1'}}>
+                    <p className="style-judul fadeInLeftBig">Oprec LO</p>
+                    <div className='style-posters fadeInRight'>
+                        <div className='row'>
+                            <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster4})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster4})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster4})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-lomba' className='col-md-6 col-lg-12 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster4})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                        </div>
+                    </div>
+
+                    <p className="style-judul fadeInLeftBig">Oprec LSO</p>
+                    <div className='style-posters fadeInRight'>
+                        <div className='row'>
+                            <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster4})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster4})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster4})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                            <Link to='/description-beasiswa' className='col-md-6 col-lg-4 col-xl-3'>
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster4})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </>
     )
 }

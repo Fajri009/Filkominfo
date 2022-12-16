@@ -69,7 +69,7 @@ const Buatkarya = () => {
             </div>
             
             <div style={{backgroundImage:`url(${Wpp})`,backgroundSize:'cover', zIndex:'0', paddingBottom: '200px'}}>
-            <div style={{zIndex:'1'}}>
+                <div style={{zIndex:'1'}}>
                     <div className='d-flex align-items-end justify-content-center karya-fadeInUp'>
                         <div className='karya-template justify-content-center row' style={{marginTop:'80px'}}>
                             <div className='col-12 col-md-4 karya-poster d-flex justify-content-center row'>

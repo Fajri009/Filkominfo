@@ -1,16 +1,11 @@
 import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
 import 'react-slideshow-image/dist/styles.css'
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
-import Data from '../../Assets/Data/Data.js'
 import Wpp from '../../Assets/Wallpaper.svg';
 import Logo from '../../Assets/Logo.png'
 import Poster1 from '../../Assets/Poster/Poster1.svg';
-import Poster2 from '../../Assets/Poster/Poster2.svg';
-import Poster3 from '../../Assets/Poster/Poster3.svg';
 import { Link } from 'react-router-dom';
 import '../../Components/Nav/Nav.css';
 import '../Style.css';
@@ -78,50 +73,6 @@ const Lomba = () => {
                 <div style={{zIndex:'1'}}>
                     <p className="style-judul fadeInLeftBig">Nasional</p>
                         <div className='style-posters fadeInRight'>
-                        {/* <Swiper
-                            slidesPerView={3}
-                            spaceBetween={30}
-                            slidesPerGroup={3}
-                            loop={true}
-                            loopFillGroupWithBlank={true}
-                            pagination={{
-                            clickable: true,
-                            }}
-                            navigation={true}
-                            modules={[Pagination, Navigation]}
-                            className="mySwiper"
-                        >
-                            <SwiperSlide className='w-100'>
-                                <Link to='/description-lomba'>
-                                    <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
-                                </Link>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
-                                    <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
-                                </Link>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
-                                    <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
-                                </Link>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
-                                    <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
-                                </Link>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
-                                    <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
-                                </Link>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
-                                    <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
-                                </Link>
-                            </SwiperSlide>
-                        </Swiper> */}
                         <div className='row'>
                             <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
                                 <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
@@ -142,16 +93,16 @@ const Lomba = () => {
                     <div className='style-posters fadeInRight'>
                         <div className='row'>
                             <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
-                                <div className='style-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
-                                <div className='style-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
-                                <div className='style-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
-                                <div className='style-poster' style={{backgroundImage: `url(${Poster2})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                         </div>
                     </div>
@@ -160,16 +111,16 @@ const Lomba = () => {
                     <div className='style-posters fadeInRight'>
                         <div className='row'>
                             <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
-                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
-                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
-                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                             <Link to='/description-lomba' className='col-md-6 col-lg-4 col-xl-3'>
-                                <div className='style-poster' style={{backgroundImage: `url(${Poster3})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
+                                <div className='style-poster' style={{backgroundImage: `url(${Poster1})`, backgroundSize:'cover', aspectRatio:'7/10'}} />
                             </Link>
                         </div>
                     </div>
